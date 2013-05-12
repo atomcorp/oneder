@@ -6,16 +6,16 @@ h1 {
 	font-weight: 800;
 }
 
-.ui li, #client li, #demands li {
+.ui li, .client li, .demands li {
 	display : none;
 }
 .ui {
 	color: red;
 }
-#demands {
+.demands {
 	color:blue;
 }
-#client {
+.client {
 	color:green;
 }
 p {

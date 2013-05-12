@@ -1,27 +1,27 @@
 
 this.uiSelect = function(){
-	var length = $("#ui .choiceNames li").length;
+	var length = $("#brief .uiNames li").length;
 	var ran = Math.floor(Math.random()*length) + 1;
-	$('#ui li').css('display','none');
-	$("#ui li:nth-child(" + ran + ")").css('display','inline');
+	$('.ui li').css('display','none');
+	$(".ui li:nth-child(" + ran + ")").css('display','inline');
 };
 
 this.clientSelect = function(){
-	var length = $("#client .choiceNames li").length;
+	var length = $("#brief .clientNames li").length;
 	var ran = Math.floor(Math.random()*length) + 1;
-	$('#client li').css('display','none');
-	$("#client li:nth-child(" + ran + ")").css('display','inline');
+	$('.client li').css('display','none');
+	$(".client li:nth-child(" + ran + ")").css('display','inline');
 };
 
 this.demandsSelect = function(){
-	var length = $("#demands .choiceNames li").length;
+	var length = $("#brief .demandsNames li").length;
 	var ran = Math.floor(Math.random()*length) + 1;
 	// while (length >= 1) {
-	$('#demands li').css('display','none');
+	$('.demands li').css('display','none');
 	// length--;
 	// alert('hello');
 	// };
-	$("#demands li:nth-child(" + ran + ")").css('display','inline');
+	$(".demands li:nth-child(" + ran + ")").css('display','inline');
 };
 
 $(document).ready(function(){	
