@@ -2,35 +2,28 @@
 <html>
 <head>
 <title>Oneder</title>
-<link href="css/reset.css" rel="stylesheet">
+<link href="reset.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="generator.js"></script>
-<style>
-#ui li, #client li, #demands li {
-	display : none;
-}
-#ui {
-	color: red;
-}
-#demands {
-	color:blue;
-}
-#client {
-	color:green;
-}
-</style>
 </head>
 <body>
-<a id="mangle" href="#">Mangle</a>	
+<header>
+	<h1>ONEDER</h1>
+	<h2>Get Some Inspiration</h2>
+	<p>Challenge yourself to complete a small, random project in under 24 hours.</p
+		>
+</header>
+<a id="pushTheButton" href="#">Try It</a>	
 <div id="ui">
-<ul class="choiceNames">
+<ul class="choiceNames uiNames">
 	<li>Conversion</li>
 	<li>Billing</li>
 	<li>Sign-Up</li>
 	<li>Landing Page</li>
 	<li>Sign Up</li>
 </ul>
-<ul>
+<ul class="choiceDescriptions uiDescription">
 	<li>Get some people buying</li>
 	<li>Get those card details</li>
 	<li>Make them join our newsletter</li>
@@ -39,13 +32,13 @@
 </ul>
 </div>  <!-- END ui -->
 <div id="client">
-<ul class="choiceNames">
+<ul class="choiceNames clientNames">
 	<li>Pininterest</li>
 	<li>Daily Mail</li>
 	<li>Spotify</li>
 	<li>Facebook</li>
 </ul>
-<ul>
+<ul class="choiceDescriptions clientDescription">
 	<li>Social media sharing</li>
 	<li>Popular celeb and hate rag</li>
 	<li>Music platform</li>
@@ -53,13 +46,15 @@
 </ul>
 </div><!-- END client -->
 <div id="demands">
-<ul class="choiceNames">
+<p>Client has demanded if uses</p>
+<ul class="choiceNames demandsNames">
 	<li>Maxamalism</li>
 	<li>Text Only</li>
 	<li>90s</li>
 	<li>Children's Birthday Party</li>
 </ul>
-<ul>
+<p>in it's make up.</p>
+<ul class="choiceDescriptions demandsDescription">
 	<li>The opposite of minimal - add++</li>
 	<li>No images - one font for hardcore</li>
 	<li>The golden internet age</li>

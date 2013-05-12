@@ -1,0 +1,30 @@
+/* Text */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800);
+
+h1 {
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 800;
+}
+
+.ui li, #client li, #demands li {
+	display : none;
+}
+.ui {
+	color: red;
+}
+#demands {
+	color:blue;
+}
+#client {
+	color:green;
+}
+p {
+	margin: 0;
+	display: inline;
+}
+ul {
+	list-style: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
