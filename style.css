@@ -7,7 +7,15 @@ body {
 	margin:0 auto;
 }
 
+a {
+	text-decoration: none;
+}
+
 /* header */
+
+header {
+	margin: 3em 0;
+}
 
 h1 {
 	font-weight: 900;
@@ -24,6 +32,17 @@ h1 {
 
 }
 
+h6 {
+	font-size: 0.8em;
+	font-weight: 800;
+	color: gray;
+	margin: 0.8em 0;
+}
+
+#pause {
+	text-align: right;
+}
+
 /* #intro div */
 
 h2 {
@@ -34,6 +53,10 @@ h2 {
 	text-align: center;
 }
 
+h2 span {
+	font-weight: 800;
+}
+
 #intro p {
 	float: left;
 	font-weight: 800;	
@@ -41,6 +64,40 @@ h2 {
 	font-size: 2em;
 	line-height: 2em;
 	text-align: center;	
+}
+
+/* button */
+
+#button {
+	margin: 3em auto;
+	display: block;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#button a {
+	text-decoration: none;
+}
+
+#pushTheButton span {
+	background-color: blue;
+	border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 4px 0 #000000;
+    color: #FFFFFF;
+    font-weight: 800;
+    overflow: visible;	
+    padding: 1em 2em;
+}
+
+#pushTheButton span:hover {
+	background-color: red;
+}
+
+#pushTheButton span:active {
+	background-color: red;
+	box-shadow: none;
+	position: relative;
+	top: 5px;	
 }
 
 .ui li, .client li, .demands li {

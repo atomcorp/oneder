@@ -1,0 +1,98 @@
+/* Adjusted 12 point star from:; http://css-tricks.com/examples/ShapesOfCSS/ */ 
+
+#burst-12 { 
+	background: red; 
+	width: 180px; 
+	height: 180px; 
+	position: absolute;
+	text-align: center;
+	/* below two lines centre boxes */
+	margin-left:-90px;
+	left:50%;
+	border-radius: 2px 2px 2px 2px;
+} 
+
+#burst-12:before, #burst-12:after, #burst-12b:before, #burst-12b:after { 
+	content: "";
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	height: 180px; 
+	width: 180px; 
+	background: red; 
+	border-radius: 2px 2px 2px 2px;
+} 
+
+#burst-12:before, #burst-12b:before { 
+	-webkit-transform: rotate(30deg); 
+	-moz-transform: rotate(30deg); 
+	-ms-transform: rotate(30deg); 
+	-o-transform: rotate(30deg); 
+}
+
+#burst-12:after, #burst-12b:after {
+	-webkit-transform: rotate(60deg); 
+	-moz-transform: rotate(60deg); 
+	-ms-transform: rotate(60deg); 
+	-o-transform: rotate(60deg); 
+}
+
+#burst-12b { 
+	background: red; 
+	width: 180px; 
+	height: 180px; 
+	position: absolute;
+	text-align: center;
+	-webkit-transform: rotate(15deg); 
+	-moz-transform: rotate(15deg); 
+	-ms-transform: rotate(15deg); 
+	-o-transform: rotate(15deg);	
+	border-radius: 2px 2px 2px 2px;
+} 
+
+/* Spinner: http://jsfiddle.net/gaby/9Ryvs/7/ */
+
+#burst-12 {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 8000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 8000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 8000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    
+    animation-name: spin;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.paused {
+    animation-duration:0ms !important;
+}
+
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

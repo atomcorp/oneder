@@ -34,4 +34,7 @@ $(document).ready(function(){
 		demandsSelect();
 		return false;
 	});	
+	$('#pause').click(function() { // START pause function
+		$('#burst-12').toggleClass('paused');
+	});
 });
