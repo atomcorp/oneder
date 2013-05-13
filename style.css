@@ -1,9 +1,46 @@
 /* Text */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,900,800);
 
-h1 {
+body {
 	font-family: 'Raleway', sans-serif; 
-	font-weight: 800;
+	max-width: 1080px;
+	margin:0 auto;
+}
+
+/* header */
+
+h1 {
+	font-weight: 900;
+	font-size: 6em;
+	text-align: center;
+	display:inline-block;
+	width: 100%;
+	margin: 0.5em 0;
+	-webkit-transform: rotate(-10deg) skew(-10deg, 0);
+	   -moz-transform: rotate(-10deg) skew(-10deg, 0);
+	    -ms-transform: rotate(-10deg) skew(-10deg, 0);
+	     -o-transform: rotate(-10deg) skew(-10deg, 0);
+	        transform: rotate(-10deg) skew(-10deg, 0);
+
+}
+
+/* #intro div */
+
+h2 {
+	float: left;	
+	font-weight: 400;
+	font-size: 4em;
+	width: 40%;
+	text-align: center;
+}
+
+#intro p {
+	float: left;
+	font-weight: 800;	
+	width:60%;
+	font-size: 2em;
+	line-height: 2em;
+	text-align: center;	
 }
 
 .ui li, .client li, .demands li {
@@ -27,4 +64,8 @@ ul {
 	display: inline;
 	margin: 0;
 	padding: 0;
+}
+
+.clear {
+	clear: both;
 }
