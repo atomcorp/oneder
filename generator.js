@@ -35,6 +35,12 @@ $(document).ready(function(){
 		return false;
 	});	
 	$('#pause').click(function() { // START pause function
-		$('#burst-12').toggleClass('paused');
+		$('#burst-12').toggleClass('paused');	
 	});
+	$('#pause').toggle(
+			function() {
+			$(this).html('<h6>Unpause</h6>');},
+			function() {
+			$(this).html('<h6>Pause</h6>');}
+		);
 });

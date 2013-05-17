@@ -1,23 +1,5 @@
-09/05/2013 // 
-- Started project
-- Made html lists. 
-- Got small javascript snipped:
+~ ONEDER ~
 
-this.randomtip = function(){
-	var length = $("#tips li").length;
-	var ran = Math.floor(Math.random()*length) + 1;
-	$("#tips li:nth-child(" + ran + ")").show();
-};
+HTML, CSS and jQuery project to make small and random project generator.
 
-$(document).ready(function(){	
-	randomtip();
-});
-
-Source: [http://cssglobe.com/simple-way-to-random-display-or-rotate-content-using/]
-
-- Had trouble adding another ul element, asked on StackOverflow: [http://stackoverflow.com/questions/16472794/jquery-show-and-hide-does-not-work-consistently]. Turns out it's to do with .length
-
-12/05/2013 // 
-
-- HTML, CSS and jQuery project to make small and random project generator.
-- Make Git repo
+09/05/2013 // Started project
