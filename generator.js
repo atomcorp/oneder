@@ -36,8 +36,8 @@ $(document).ready(function(){
 	});	
 	$('#pause').click(function() { // START pause function
 		$('#burst-12').toggleClass('paused');	
-	});
-	$('#pause').toggle(
+	}); 
+	$('#pause').toggle( // START pause function
 			function() {
 			$(this).html('<h6>Unpause</h6>');},
 			function() {

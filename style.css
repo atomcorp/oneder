@@ -13,7 +13,7 @@ a {
 
 /* header */
 
-header {
+#pageHeading {
 	margin: 3em 0;
 }
 
@@ -66,27 +66,39 @@ h2 span {
 	text-align: center;	
 }
 
+/* Generator */
+
+#generator {
+	padding: 20px;
+	width: 80%;
+	margin: 3em auto;
+}
+
 /* button */
 
 #button {
-	margin: 3em auto;
-	display: block;
 	text-align: center;
-	font-size: 1.5em;
+	float: left;
+	width: 20%;
+	margin-left: 10%;
 }
 
 #button a {
 	text-decoration: none;
+	color: white;
+	font-weight: 900;
+	font-size: 1.5em;	
 }
 
 #pushTheButton span {
 	background-color: blue;
-	border-radius: 6px 6px 6px 6px;
-    box-shadow: 0 4px 0 #000000;
-    color: #FFFFFF;
-    font-weight: 800;
-    overflow: visible;	
-    padding: 1em 2em;
+	border-radius: 500px;
+	height:100px;
+	width:100px;
+	margin: 3em auto 0;
+	box-shadow: 0 5px 0 #000000;
+	display: block;
+	line-height: 100px;
 }
 
 #pushTheButton span:hover {
@@ -100,17 +112,40 @@ h2 span {
 	top: 5px;	
 }
 
+/* brief */
+
+#brief {
+	float: right;
+	width: 70%;
+	font-size: 1.5em;
+}
+
+h3 {
+	text-decoration: underline;
+	margin: 1em 0
+}
+
+#brief p {
+	line-height: 1.5em;
+}
+
 .ui li, .client li, .demands li {
 	display : none;
 }
 .ui {
 	color: red;
+	font-weight: 800;
+	padding: 2px 5px;
 }
 .demands {
 	color:blue;
+	font-weight: 800;
+	padding: 2px 5px;
 }
 .client {
 	color:green;
+	font-weight: 800;
+	padding: 2px 5px;
 }
 p {
 	margin: 0;
