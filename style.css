@@ -94,9 +94,9 @@ h2 span {
 /* Generator */
 
 #generator {
-    padding: 1em 10% 2em;
-	width: 80%;
-	margin: 3em auto;
+    padding: 1em 3em 2em 3em;
+	width: 100%;
+	margin: 3em 0em 3em -3em;
 	border-top: 10px solid #D12010;
 	border-bottom: 10px solid #D12010;	
 	background: yellow; /* Old browsers */
@@ -209,6 +209,7 @@ ul {
     font-weight: 900;
     height: 60px;
     left: 70%;
+    top:-30px;
     opacity: 0.3;
     position: absolute;
     text-align: center;
@@ -240,6 +241,11 @@ h3 {
 .help-full p {
 	padding-bottom: 1em;
 	display: block;
+	color: #F4A460;
+}
+
+#faq {
+	cursor: pointer;
 }
 
 footer {
@@ -248,8 +254,7 @@ footer {
 }
 
 footer a {
-	color:#000;
-	text-decoration: underline;
+	color:#fff;
 	font-weight: 800;
 }
 /* Media Queries */

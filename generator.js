@@ -42,5 +42,10 @@ $(document).ready(function(){
 			$(this).html('<h6>Unpause</h6>');},
 			function() {
 			$(this).html('<h6>Pause</h6>');}
-		);
+	);
+	$('.help-full section').slideToggle(300);
+	$('#faq').click(function() {
+		$('.help-full section').slideToggle(300);
+	}); // end click
+
 });
